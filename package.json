@@ -1,0 +1,11 @@
+{
+  "name": "orientering",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "png": "docker run --rm -u $(id -u):$(id -g) -v $PWD:/data ghcr.io/mermaid-js/mermaid-cli/mermaid-cli:10.9.1 -i TAVLING.md -o tavling.png"
+  },
+  "author": "",
+  "license": "ISC"
+}
