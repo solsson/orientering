@@ -18,11 +18,11 @@ pmstart -- Ja --> pm
 pmstart -- Ja --> starttid
 pm(Läs PM)
 starttid{Koll på<br/>starttid?} -- Nej --> pmstart
-starttid --> avstarena
+starttid -- Ja --> avstarena
 avstarena{Koll på avstånd<br/>P->arena?} -- Nej --> pm
-avstarena --> avststart
+avstarena -- Ja --> avststart
 avststart{Koll på avstånd<br/>arena->start?} -- Nej --> pm
-avststart --> avgtid
+avststart -- Ja --> avgtid
 pm --> avstarena
 avgtid(Härled avgångstid) -.-> packa
 
